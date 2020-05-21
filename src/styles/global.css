@@ -1,0 +1,64 @@
+h1Size   {
+  font-size : 125rem;
+  line-height : 175;
+}
+h2Size   {
+  margin-top : 125rem;
+  font-size  : 11rem;
+  color: #999999;
+  line-height: 175;
+}
+fontSmallCrimson  {
+  color: crimson;
+  font-size : small;
+}
+fontSmall   {
+  font-size:  small;
+}
+fontCrimson   {
+  color: crimson;
+}
+fontGray   {
+  color: #777777 ;
+}
+fontRed  {
+  color: red
+}
+fontBule {
+   color: steelblue;
+}
+divLineSpace   {
+  margin-top:  20;
+}
+
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-color: #000000;
+}
+.tg td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: #000000;
+  color: #333;
+  background-color: #fff;
+}
+.tg th {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: #000000;
+  color: #333;
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,32 @@
+.h1Size  {
+    font-size : 1.25rem;
+    line-height : 1.75;
+  }
+   .h2Size   {
+    margin-top : 1.25rem;
+    font-size  : 1.1rem;
+    color: #999999;
+    line-height: 1.75;
+  }
+   .fontSmallCrimson  {
+    color: crimson;
+    font-size : small;
+  }
+   .fontSmall   {
+    font-size:  small;
+  }
+   .fontCrimson   {
+    color: crimson;
+  }
+   .fontGray   {
+    color: #777777 ;
+  }
+  .fontRed  {
+    color: red
+  }
+  .fontBule {
+     color: steelblue;
+  }
+   .divLineSpace   {
+    margin-top:  20;
+  }
