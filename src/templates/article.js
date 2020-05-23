@@ -17,7 +17,7 @@ const Articlearticle = props => {
  /* コメント欄機能Disqusの設定 */
  const slug = useLocation()
  const title = article.title
- const disqusShortname = "";
+ const disqusShortname = "bij-site-2";
  const disqusConfig = {
   config: { identifier: slug, title },
 }
@@ -117,6 +117,8 @@ export const query = graphql`
    }
  }
 `
+
+/* <SEO description= />用に記事本文を120字以内に収める関数 */
 let striptags = require('striptags');
 function sumarrize(html) {
   const metaDescription = striptags(html).replace(/\r?\n/g, '').trim();

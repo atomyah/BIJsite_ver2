@@ -16,8 +16,8 @@ const PatientsPage = ({ data }) => (
         const articles = edge.node
         const category = edge.node.category[0].name
         
-        console.log('◆categoryは　' + category)
-        console.log('◆numは　' + edge.node.num)
+        //console.log('◆categoryは　' + category)
+        //console.log('◆numは　' + edge.node.num)
         //console.log('◆articles.idは　' + articles.id)
         //console.log('◆リンク先は　' + `/medias-article/${articles.id}`)
 
