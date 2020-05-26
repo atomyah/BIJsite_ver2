@@ -1,5 +1,5 @@
 import React from "react"
-//import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../../components/layout"
 //import Image from "../../components/image"
@@ -139,7 +139,7 @@ const BenzoHistory = () => (
         <br />
         一刻も早く、緊急な対応・行動が必要となっている状況です。
         <div style={{marginTop: 40}}></div>
-        <p className={Style.fontBrown}>（翻訳＆注釈：ベンゾジアゼピン情報センター　管理人）</p>
+        <p className={Style.fontBrown}>（翻訳＆注釈：<Link to="patients-article/8" target="blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター　管理人</Link>）</p>
         
         
       </Container>

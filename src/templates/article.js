@@ -68,7 +68,7 @@ const Articlearticle = props => {
          <Col md={4}>
          <span style={{ fontSize: `0.9rem`, color: `gray` }}>投稿：{article.date}</span>
          </Col>
-       </Row>     
+       </Row>
        <br />
        <p
          dangerouslySetInnerHTML={{

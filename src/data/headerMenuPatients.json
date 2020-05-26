@@ -48,5 +48,10 @@
         "title": "my tapering log", 
         "link": "/patients-article/10",
         "category": "patients"
+    },
+    {
+        "title": "推奨ブログ集", 
+        "link": "/patients-article/11",
+        "category": "patients"
     }
 ]

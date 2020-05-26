@@ -9,12 +9,16 @@ import { Container, Row, Col, Badge, Accordion, Card, Button } from 'react-boots
 import Style from './index.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faVideo } from '@fortawesome/free-solid-svg-icons'
+import { faVideo,faExclamation} from '@fortawesome/free-solid-svg-icons'
 
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="ベンゾジアゼピン情報センター" />
+    <SEO title="ベンゾジアゼピン情報センター トップページ"
+        description="睡眠薬、抗不安薬のほとんどはベンゾジゼアピン系薬剤に分類されます。ベンゾジアゼピンは決められた処方用量を守って飲み続けても重篤な傷害を引き起こします" 
+        image="/twitterimg/icon-144x144.png" 
+        lang="ja"
+    />
     <Container fluid="md">
     <h1 className={Style.h1Size}>ベンゾジアゼピン（睡眠薬・抗不安薬）情報センター</h1> 
       <Row>
@@ -23,17 +27,17 @@ const IndexPage = () => (
             <Col>
               <h2 className={Style.h2Size}>新着・更新情報</h2>
               <div>
-                <Link to="/doctors/" alt="論文：Treatment of Benzodiazepine Dependence">
-                  ドクター向け記事「論文：Treatment of Benzodiazepine Dependence」の管理人注記を更新しました
+                <Link to="/patients-article/11" alt="推奨ブログ集">
+                  患者向け記事「推奨ブログとYoutubeチャンネル」を追加しました
                 </Link>
                 <Badge variant="danger">新</Badge>
+                {/* <Badge variant="info">更</Badge> */}
               </div>
               <div>
-                <Link to="/patients/" alt="ドライカット（細粉法）での減薬方法">
-                  患者向け記事「ドライカット（細粉法）での減薬方法」を追加しました
-                </Link>
-                <Badge variant="info">更</Badge>
+              サイトリニューアルしました（各記事にコメント欄を設置）
+                <Badge variant="danger">新</Badge>
               </div>
+            
             </Col>
           </Row>
           <Row>

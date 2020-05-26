@@ -57,33 +57,27 @@ function Header() {
                     <Link to="/introduction" className="nav-link">
                       ベンゾジアゼピン概要
                     </Link>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item className="nav-link">
+                  
                     <Link to="/introductioneng" className="nav-link">
                       summary of benzodiazepine
                     </Link>
-                  </NavDropdown.Item>
-                  <NavDropdown.Item className="nav-link">
+                  
                     <Link to="/basics/benzohistory" className="nav-link">
                       ベンゾジアゼピンの歴史
                     </Link>
-                  </NavDropdown.Item>    
-                  <NavDropdown.Item className="nav-link">
+                  
                     <Link to="/basics/benzowords" className="nav-link">
                       ベンゾジアゼピン用語集
                     </Link>
-                  </NavDropdown.Item>    
-                  <NavDropdown.Item className="nav-link">
+                  
                     <Link to="/basics/withdrawalsymptoms" className="nav-link">
                       ベンゾジアゼピン離脱症状一覧 - Withdrawal symptoms
                     </Link>
-                  </NavDropdown.Item>    
-                  <NavDropdown.Item className="nav-link">
+                  
                     <Link to="/basics/benzolist" className="nav-link">
                       ベンゾ一覧 - ジアゼパム換算表
                     </Link>
-                  </NavDropdown.Item>    
-                  <NavDropdown.Item className="nav-link">
+                  
                     <Link to="/basics/benzolisteng" className="nav-link">
                       Benzodiazepines List and Equivalents
                     </Link>
