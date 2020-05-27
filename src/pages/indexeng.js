@@ -6,99 +6,98 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 import { Container, Row, Col, Badge, Accordion, Card, Button } from 'react-bootstrap'
-import Style from './index.module.css'
+import Style from './indexeng.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faVideo} from '@fortawesome/free-solid-svg-icons'
 
-
-const IndexPage = () => (
-  <Layout>
-    <SEO title="ベンゾジアゼピン情報センター トップページ"
-        description="睡眠薬、抗不安薬のほとんどはベンゾジゼアピン系薬剤に分類されます。ベンゾジアゼピンは決められた処方用量を守って飲み続けても重篤な傷害を引き起こします" 
-        image="/twitterimg/icon-144x144.png" 
-        lang="ja"
-    />
-    <Container fluid="md">
-    <h1 className={Style.h1Size}>ベンゾジアゼピン（睡眠薬・抗不安薬）情報センター</h1> 
+const IndexPageEng = () => (
+    <Layout>
+      <SEO title="benzodiazepine information center"
+          description="most of hypnotics and anxiotics is benzodiazepines. beaware the dangers of them as prescribed." 
+          image="/twitterimg/icon-144x144.png" 
+          lang="ja"
+      />
+      <Container fluid="md">
+      <h1 className={Style.h1Size}>Benzodiazepine Information Center - Japan</h1> 
       <Row>
         <Col md={6}>
           <Row>
             <Col>
-              <h2 className={Style.h2Size}>新着・更新情報</h2>
-              <div>
-                <Link to="/patients-article/8" alt="ベンゾ減薬記録">
-                  患者向け記事「管理人のベンゾ減薬記録」を更新しました
-                </Link>
-                <Badge variant="info">更</Badge>
+              <h2 className={Style.h2Size}>new articles</h2>
                 {/* <Badge variant="danger">新</Badge> */}
-              </div>
               <div>
                 <Link to="/patients-article/10" alt="benzo tapering log">
                   Updated the article "my tapering log"
                 </Link>
-                <Badge variant="info">更</Badge>
+                <Badge variant="info">update</Badge>
               </div>
               <br />
               <div>
-                <Link to="/patients-article/11" alt="推奨ブログ集">
-                  患者向け記事「推奨ブログとYoutubeチャンネル」を追加しました
-                </Link>
-                <Badge variant="danger">新</Badge>
-                {/* <Badge variant="info">更</Badge> */}
-              </div>
-              <div>
-              サイトリニューアルしました（各記事にコメント欄を設置）
-                <Badge variant="danger">新</Badge>
+              Site renewal! - comments field added to the pages
+                <Badge variant="danger">new</Badge>
               </div>
             
             </Col>
           </Row>
           <Row>
             <Col>
-              <h2 className={Style.h2Size}>ニュースリンク</h2>
-              <a href="https://medical.jiji.com/topics/1495" alt="睡眠薬の中止で離脱症状" target="_blank" rel="noreferrer noopener">「睡眠薬や抗不安薬の中止で離脱症状」（メディカルトリビューン＝時事）</a>
-              <br /><span className={Style.fontSmallCrimson}>週刊誌等でベンゾの危険性についての記事が多くなっています。それらを読んでけしてすぐに止めたり減薬を急がないでください。充分に学べば不安になることはありません。</span>
+              <h2 className={Style.h2Size}>Link to pages</h2>
+              <Link to="/patients-article/10" alt="my tapering log">
+                my tapering log
+              </Link>
+              <br />
+              <Link to="/introductioneng" alt="Summary of Benzodiazepine">
+                Summary of Benzodiazepine
+              </Link>
+              <br />
+              <Link to="/basics/withdrawalsymptoms" alt="Benzodiazepines withdrawal symptoms">
+                Benzodiazepines withdrawal symptoms
+              </Link>
+              <br />
+              <Link to="/basics/benzolisteng" alt="Benzodiazepines List and Equivalents">
+                Benzodiazepines List and Equivalents
+              </Link>
             </Col>
           </Row>
         </Col>
         <Col md={6}>
           <Row>
             <Col>
-              <h2 className={Style.h2Size}>動画紹介</h2>
+              <h2 className={Style.h2Size}>movies</h2>
               <div>
                 <FontAwesomeIcon icon={faVideo} />
-                <a href="https://youtu.be/nHDjjwMKRCY" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生ーベンゾクライシス （前半）22分</a>
+                <a href="https://youtu.be/nHDjjwMKRCY" alt="This Is Lif with Lisa Ling" target="_blank" rel="noreferrer noopener">This Is Lif with Lisa Ling （前半）22分</a>
                 <br />
                 <FontAwesomeIcon icon={faVideo} />
-                <a href="https://youtu.be/X4VwnA3qsas" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生ーベンゾクライシス （後半）19分</a>
+                <a href="https://youtu.be/X4VwnA3qsas" alt="This Is Lif with Lisa Ling" target="_blank" rel="noreferrer noopener">This Is Lif with Lisa Ling （後半）19分</a>
                 <br />
                 <span className={Style.fontSmall}>This Is Life with Lisa Ling 2019年10月6日放映</span>
-                <a href="https://youtu.be/nHDjjwMKRCY" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener"><Image filename="home_03.png" alt="ドキュメンタリー番組―ベンゾクライシス" /></a>
+                <a href="https://youtu.be/nHDjjwMKRCY" alt="This Is Lif with Lisa Ling" target="_blank" rel="noreferrer noopener"><Image filename="home_03.png" alt="This Is Lif with Lisa Ling" /></a>
                 <br />
                 <span className={Style.fontSmall}>出典：<a href="https://edition.cnn.com/shows/this-is-life-with-lisa-ling" target="_blank" rel="noreferrer noopener">CNN, This Is Life with Lisa Ling</a>      
                 <br />
-                字幕：<a href="https://twitter.com/benzoinfojapan" target="_blank" rel="noreferrer noopener">ベンゾジアゼピン情報センター 管理人</a></span>
+                sub title：<a href="https://twitter.com/benzoinfojapan" target="_blank" rel="noreferrer noopener">benzodiazepine information center - @benzoinfojapan</a></span>
               </div>
             </Col>
           </Row>
           <Row>
             <Col>
-              <h2 className={Style.h2Size}>その他の動画紹介</h2>
+              <h2 className={Style.h2Size}>other movies</h2>
               <div>
                   <FontAwesomeIcon icon={faVideo} />
-                  <a href="https://youtu.be/JZN5n4HBrcc" alt="ベンゾ被害者の声" target="_blank" rel="noreferrer noopener">"ベンゾ被害者の声" 9分</a>
+                  <a href="https://youtu.be/JZN5n4HBrcc" alt="many faces benzo" target="_blank" rel="noreferrer noopener">"many faces benzo" 9分</a>
               </div>
               <div>
                   <FontAwesomeIcon icon={faVideo} />
-                  <a href="https://youtu.be/c9W_3Qud8Ds" alt="ベンゾジアゼピン離脱の困難性" target="_blank" rel="noreferrer noopener">"スタンフォード大学精神科医 アナ・ランプキー教授インタビュー" 4分</a>
+                  <a href="https://youtu.be/c9W_3Qud8Ds" alt="Benzodiazepine Withdrawal Difficulties: Stanford Psychiatrist Anna Lembke, M.D." target="_blank" rel="noreferrer noopener">"Benzodiazepine Withdrawal Difficulties: Stanford Psychiatrist Anna Lembke, M.D." 4分</a>
               </div>
             </Col>
           </Row>
         </Col>
       </Row>
       <div className={Style.divLineSpace}></div>
-
+      {/*
             <h2 className={Style.h2Size}>はじめに</h2>
               睡眠薬、抗不安薬のほとんどはベンゾジゼアピン系薬剤に分類されます。ベンゾジアゼピンは決められた処方用量を守って飲み続けても重篤な傷害を引き起こします。日本だけでなく世界中で蔓延処方され約10人にひとりが服用し
             <Link to="/doctors-article/11" alt="Treatment of Benzodiazepine Dependence" target="_blank" rel="noreferrer noopener">1ヶ月連用で約半数が傷害形成されます</Link>（何年服用していても問題ない人も多くいます）。短期間の減薬では離脱症状が拷問と言っていいほどの苦痛で
@@ -159,12 +158,12 @@ const IndexPage = () => (
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-          </Accordion>        
-
+          </Accordion>   
+      */}
     </Container>
 
-    <div className={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
-  </Layout>
+<div className={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
+</Layout>
 )
 
-export default IndexPage
+export default IndexPageEng
