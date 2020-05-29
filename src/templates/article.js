@@ -84,19 +84,14 @@ const Articlearticle = props => {
          }}
        ></div>
        <br />
-       {/* microCMSでリレーションさせた著者データAPIを同じページに表示させるとうまく
-       ページ表示できないので著者データarticle.jsとは分けてauthors.jsに逃がすことにした. 
-       */}
-       {/* 
-       <span>著者：{article.writer.name}</span>
+       <span>著者：{article.author_rel[0].name}</span>
        <br />
-       <img src={article.writer.image.url} width={160} alt={article.writer.name} />
-       <p
+       <img src={article.author_rel[0].image.url} width={200} alt={article.author_rel[0].name} />
+       <div
          dangerouslySetInnerHTML={{
-           __html: `${article.writer.profile}`,
+           __html: `${article.author_rel[0].profile}`,
          }}
-       ></p>
-       */}
+       ></div>
      </div>
      <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
      </Container>
@@ -120,6 +115,14 @@ export const query = graphql`
      body
      category {
        name
+     }
+     author_rel {
+       name
+       profile
+       image
+       {
+         url
+       }
      }
    }
  }
