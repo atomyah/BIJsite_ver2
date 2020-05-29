@@ -61,21 +61,33 @@ const Articlearticle = props => {
                 }}
        >
        </span>
+      
        <Row>
          <Col md={8}>
-         <span style={{ fontSize: `0.9rem`, color: `gray` }}>著者：{article.writer.name}</span>
+          
+         <span style={{ fontSize: `0.9rem`, color: `gray` }}
+         dangerouslySetInnerHTML={{
+           __html: `著者：${article.author}`,
+         }}
+         ></span>
+         
          </Col>
          <Col md={4}>
          <span style={{ fontSize: `0.9rem`, color: `gray` }}>投稿：{article.date}</span>
          </Col>
        </Row>
+       
        <br />
-       <p
+       <div
          dangerouslySetInnerHTML={{
            __html: `${article.body}`,
          }}
-       ></p>
+       ></div>
        <br />
+       {/* microCMSでリレーションさせた著者データAPIを同じページに表示させるとうまく
+       ページ表示できないので著者データarticle.jsとは分けてauthors.jsに逃がすことにした. 
+       */}
+       {/* 
        <span>著者：{article.writer.name}</span>
        <br />
        <img src={article.writer.image.url} width={160} alt={article.writer.name} />
@@ -84,6 +96,7 @@ const Articlearticle = props => {
            __html: `${article.writer.profile}`,
          }}
        ></p>
+       */}
      </div>
      <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
      </Container>
@@ -98,6 +111,7 @@ export const query = graphql`
    microcmsArticles(id: { eq: $id }) {
      title
      title_origin
+     author
      date
      body
      pict {
@@ -106,13 +120,6 @@ export const query = graphql`
      body
      category {
        name
-     }
-     writer {
-       name
-       profile
-       image {
-         url
-       }
      }
    }
  }
