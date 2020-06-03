@@ -2,6 +2,11 @@
 // import PropTypes from "prop-types"
 import React from "react"
 import { Container, Navbar, Nav } from 'react-bootstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter } from '@fortawesome/free-solid-svg-icons'
+
+import Twitter_Logo_Blue from '../images/Twitter_Logo_Blue.svg'
+
 
 const Footer = () => (
     <>
@@ -12,23 +17,30 @@ const Footer = () => (
       color: black;
       padding: 20;
     }
+    .box img {
+      _vertical-align: middle; /* 画像を垂直に */
     `}
     </style>
   <footer className="bg-snow">
     <Container style={{ paddingTop: `1.2rem`, paddingBottom: `0rem` }}>
       <Navbar expand="md">
           <Nav className="ml-auto">
+            {/* ロードが遅くなるのでフォローボタンの埋め込みはやめた
             <div className="twitter">
 　              <a href="https://twitter.com/benzoinfojapan?ref_src=twsrc%5Etfw" className="twitter-follow-button" data-show-count="true" data-lang="ja"></a>
                 {<script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>}
             </div>
-            　☜お問い合わせはツイッターへ
-          </Nav>            
-          <Navbar.Collapse id="navbarResponsive">
-            <Nav className="ml-auto">
+            */}
+              <div className="box">
+            　<img src={Twitter_Logo_Blue} width={30} alt={'Twitter'} />
+              <a href="https://twitter.com/benzoinfojapan" target="_blank" rel="noreferrer noopener">@benzoinfojapan</a>　☜お問い合わせはツイッターへ
+              </div>
+          </Nav>
+      </Navbar>
+      <Navbar>      
+          <Nav className="ml-auto">
                 © {new Date().getFullYear()}, ベンゾジアゼピン情報センター 
-            </Nav>
-          </Navbar.Collapse>
+          </Nav>
       </Navbar>
     </Container>
   </footer>

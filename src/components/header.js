@@ -10,8 +10,8 @@ import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome,faComments,faCamera,faUserMd,faHeart,faBookMedical } from '@fortawesome/free-solid-svg-icons'
 
-function Header() {
 
+function Header() {
   return (
     <>
     <style type="text/css">

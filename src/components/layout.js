@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -7,7 +7,11 @@ import Footer from "./footer"
 //import "./layout.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Search from './search'
+
+
 const Layout = ({ children }) => {
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -20,6 +24,17 @@ const Layout = ({ children }) => {
 
   return (
     <>
+    <style type="text/css">
+    {`
+    .input-empty {
+      display:none
+    }
+    .input-value {
+      border: 1px solid black;
+    }
+    `}
+    </style>
+
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
