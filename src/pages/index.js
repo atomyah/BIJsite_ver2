@@ -120,7 +120,7 @@ const IndexPage = () => (
       <div className={Style.divLineSpace}></div>
 
           <Accordion defaultActiveKey="0">
-          <Card>
+          
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="1">
                 利用規約
@@ -137,10 +137,10 @@ const IndexPage = () => (
                 当サイトを利用される方は、自己の責任において利用することに同意されたものとし、当サイトの情報の利用により生じる損害についてサイト管理者はあらゆる責任を放棄します。</span>                               
               </Card.Body>
             </Accordion.Collapse>
-          </Card>
+          
           </Accordion>
           <Accordion>
-          <Card>
+          
             <Card.Header>
               <Accordion.Toggle as={Button} variant="link" eventKey="1">
                 医療免責事項
@@ -158,11 +158,11 @@ const IndexPage = () => (
               <br />当サイトの医療情報をもって医学的助言を求めることを遅らせたり、医学的助言を無視したり、あるいは治療を中止しないようにしてください。 
               </Card.Body>
             </Accordion.Collapse>
-          </Card>
+          
           </Accordion>
-          <Card>
+          
         <span className={Style.fontCrimson}>※ 当サイトは精神医療や薬物療法を否定するいかなる団体・個人とも関係を持ちません。</span>
-        </Card>
+        
     </Container>
 
     <div className={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>

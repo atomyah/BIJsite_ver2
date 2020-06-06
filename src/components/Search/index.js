@@ -25,7 +25,7 @@ const Hit = ({ hit }) => (
                 <span className="link-to">記事本文へ</span>
             </Link>
             <Snippet tagName="mark" hit={hit} attribute="body" />
-            <div className="card-rating">Rating: {hit.rating}</div>
+            {/*<div className="card-rating">Rating: {hit.rating}</div>*/}
             <div className="card-genre"> <span>{hit.category}</span></div>
         </div>
     </div>    
@@ -37,7 +37,7 @@ const Content = () => (
             <Stats/>
         </div>
         <Hits hitComponent={Hit} />
-        <div> <Pagination/> </div>
+        <div className="pagination"> <Pagination/> </div>
     </main>
 );
 
@@ -73,9 +73,7 @@ const Search = () => {
         </header>
 
             <div className={!flag ? 'input-empty' : 'input-value'}>
-                <div className="body-content">
-                    <Content/>
-                </div>
+                <Content/>
             </div>
 
         </InstantSearch>

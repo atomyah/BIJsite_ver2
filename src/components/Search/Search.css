@@ -1,9 +1,9 @@
 .header{
-    padding-top: 1em;
+    padding-top: 0.5em;
     width: 100%;
     display: flex;
     background-color: #dce2e9;
-    height: 11vh
+    height: 10vh
 }
 .search-bar{
     display: flex;
@@ -13,8 +13,8 @@
 input{
     max-width: 500px;
     border: none;
-    border-radius: .5em;
-    padding: 10px
+    border-radius: .3em;
+    padding: 5px
 
 }
 .input-empty{
@@ -24,15 +24,15 @@ input{
     display: inline;
 }
 .ais-SearchBox-submit{
-    width: 50px;
+    width: 30px;
     border: none;
-    padding: 10px;
+    padding: 5px;
     color: #c4c4c4
 }
 .ais-SearchBox-reset{
-    width: 50px;
+    width: 30px;
     border: solid;
-    padding: 10px;
+    padding: 5px;
     color: #c4c4c4
 }
 main{
@@ -53,14 +53,16 @@ li{
     background-color: #f9f9f9;
     display: flex;
     border-radius: 10px;
-    margin:20px;
+    margin-left: 0px;
+    margin-right: 40px;
+    margin-bottom: 10px;
     padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card-contents{
-    margin-left: 20px;
+    margin-left: 0px;
     display: flex;
-    align-content: center;
+    align-content: left;
     flex-direction: column;
     justify-content: space-between
 }
@@ -77,10 +79,18 @@ li{
     background-color: #c4c4c4
 }
 .information{
-    padding-top: 10px;
+    padding: 10px;
     display: flex;
     justify-content: space-around;
-    font-size: 11px
+    font-size: 11px;
+}
+.pagination{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-around;
 }
 a{
     text-decoration: none
