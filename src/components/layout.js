@@ -7,7 +7,7 @@ import Footer from "./footer"
 //import "./layout.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Search from './search'
+import Search from './Search'
 
 
 const Layout = ({ children }) => {
@@ -36,6 +36,7 @@ const Layout = ({ children }) => {
     </style>
 
       <Header siteTitle={data.site.siteMetadata.title} />
+      <Search />
       <div
         style={{
           margin: `0 auto`,

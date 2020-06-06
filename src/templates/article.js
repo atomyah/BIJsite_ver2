@@ -4,6 +4,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Row, Col, Breadcrumb} from 'react-bootstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEdit } from '@fortawesome/free-solid-svg-icons'
 
 import { useLocation } from "@reach/router"
 import { DiscussionEmbed } from "disqus-react";
@@ -93,6 +95,8 @@ const Articlearticle = props => {
          }}
        ></div>
      </div>
+     <br /><br />
+     <FontAwesomeIcon icon={faEdit} /><span style={{color:`#5a818c`}}>ご自由にコメントをお書きください。管理人の承認作業はありません。</span>
      <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
      </Container>
    </Layout>

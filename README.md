@@ -151,11 +151,18 @@ module.exports = {
                   id: node.category[0].name + '-article/' + node.num,
                   body: sumarrize(node.body),
                   title: node.title,
+                  category: node.category[0].name
                 }
               })
             },
           ],
           chunkSize: 100000,
+          settings: {
+            searchableAttributes: ['body','title'],
+            indexLanguages: ['ja'],
+            queryLanguages: ['ja'],
+            attributesToSnippet: ['body:100']
+          },
         },
       },
     ],

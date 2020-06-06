@@ -5,7 +5,9 @@ import { connectHighlight } from 'react-instantsearch-dom';
 import algoliasearch from 'algoliasearch/lite';
 import { 
   InstantSearch, 
-  SearchBox, 
+  SearchBox,
+  searchState,
+  searchResults,
   Hits,
   Highlight,
   Configure,
@@ -39,7 +41,7 @@ const Hit = ({ hit }) =>
     </p>
 );
 
-
+  
 // InstantSearchのコンフィグとレンダリング
 const Search = () => {
     const [hasInput, setHasInput] = useState(false);
@@ -49,10 +51,6 @@ const Search = () => {
             searchClient={searchClient}
             indexName="bij-site"
         >
-
-            <Configure hitsPerPage={5}
-            />
-
             <SearchBox 
                 searchAsYouType={false}
                 reset='クリア'
@@ -67,8 +65,8 @@ const Search = () => {
             />
 
             <div className={!hasInput ? 'input-empty' : 'input-value'}>
-                {console.log('■hasinputは、',hasInput)}
-                <Hits hitComponent={Hit} />
+                {/* console.log('■hasinputは、',hasInput) */}
+                <Hits />
             </div>
 
         </InstantSearch>

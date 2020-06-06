@@ -27,6 +27,10 @@ const IndexPage = () => (
             <Col>
               <h2 className={Style.h2Size}>新着・更新情報</h2>
               <div>
+                サイト内検索機能を追加しました
+                <Badge variant="danger">新</Badge>
+              </div>
+              <div>
                 <Link to="/patients-article/8" alt="ベンゾ減薬記録">
                   患者向け記事「管理人のベンゾ減薬記録」を更新しました
                 </Link>
@@ -46,10 +50,6 @@ const IndexPage = () => (
                 </Link>
                 <Badge variant="danger">新</Badge>
                 {/* <Badge variant="info">更</Badge> */}
-              </div>
-              <div>
-              サイトリニューアルしました（各記事にコメント欄を設置）
-                <Badge variant="danger">新</Badge>
               </div>
             
             </Col>
@@ -74,7 +74,7 @@ const IndexPage = () => (
                 <a href="https://youtu.be/X4VwnA3qsas" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生ーベンゾクライシス （後半）19分</a>
                 <br />
                 <span className={Style.fontSmall}>This Is Life with Lisa Ling 2019年10月6日放映</span>
-                <a href="https://youtu.be/nHDjjwMKRCY" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener"><Image filename="home_03.png" alt="ドキュメンタリー番組―ベンゾクライシス" /></a>
+                <a href="https://youtu.be/nHDjjwMKRCY" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener"><Image filename="home_03.jpg" alt="ドキュメンタリー番組―ベンゾクライシス" /></a>
                 <br />
                 <span className={Style.fontSmall}>出典：<a href="https://edition.cnn.com/shows/this-is-life-with-lisa-ling" target="_blank" rel="noreferrer noopener">CNN, This Is Life with Lisa Ling</a>      
                 <br />
@@ -128,7 +128,7 @@ const IndexPage = () => (
             </Card.Header>
             <Accordion.Collapse eventKey="1">
               <Card.Body>
-              　当サイトは、ベンゾジアゼピン系薬に関する情報を必要とされている方々（以下「利用者」）が使用することを目的とします。
+              当サイトは、ベンゾジアゼピン系薬に関する情報を必要とされている方々（以下「利用者」）が使用することを目的とします。
                 <br />当サイトは、特定の有志（以下「サイト管理者」）によって設立・運営されております。特定の団体が運営するものではありません。
                 <br />利用者の利便性のためにリンクされた他のサイトにアクセスする場合、それらのサイトは本サイトとは全く独立したものであり、本サイトはそれらのサイトの内容についていかなる権限ももちません。
                 <br />当サイトの情報を利用しようとする利用者は、サイト内のいかなる記載内容を参考にする場合においても、それらに依存することなく、行動を起こす前に、記載内容に関連する国や自治体、医療機関、サービス提供者、製造者、等に確認を取った上で、自己責任で行ってください。
@@ -148,19 +148,21 @@ const IndexPage = () => (
             </Card.Header>
             <Accordion.Collapse eventKey="1">
               <Card.Body>
-              　当サイトは、ベンゾ離脱症状の病状と減薬についての一般的な情報を発信しています。あくまで情報であってアドバイスではありません。
+              当サイトは、ベンゾ離脱症状の病状と減薬についての一般的な情報を発信しています。あくまで情報であってアドバイスではありません。
               <br />当サイトの医療情報は明示または黙示を問わずいかなる保証もいたしません。「現状のまま」提供するものます。
-              <br />当サイトは、以下のことを保証しません。
-                <li>当サイトの医療情報が常に入手可能である</li>
-                <li>当サイトの医療情報が完全に正確である。または最新である。</li>
+              <br />当サイトは、以下のことを保証しません。<br />
+                ・当サイトの医療情報が常に入手可能である<br />
+                ・当サイトの医療情報が完全に正確である。または最新である。<br />
               <br />利用者は、主治医または他の専門医療提供者からの医療アドバイスに代わるものとして当サイト上の情報に頼ることはできません。医学的事項について具体的な質問がある場合は、医師または他の専門医療提供者に相談してください。
               <br />何らかの症状に苦しんでいる場合は、直ちに医師の診察を受けてください。
               <br />当サイトの医療情報をもって医学的助言を求めることを遅らせたり、医学的助言を無視したり、あるいは治療を中止しないようにしてください。 
               </Card.Body>
             </Accordion.Collapse>
           </Card>
-          </Accordion>        
-
+          </Accordion>
+          <Card>
+        <span className={Style.fontCrimson}>※ 当サイトは精神医療や薬物療法を否定するいかなる団体・個人とも関係を持ちません。</span>
+        </Card>
     </Container>
 
     <div className={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
