@@ -27,6 +27,13 @@ const IndexPage = () => (
             <Col>
               <h2 className={Style.h2Size}>新着・更新情報</h2>
               <div>
+                <Link to="/doctotrs-article/21" alt="ベンゾ処方量依存に陥ったドクターの減断薬と回復レポート">
+                  医師向け記事「ベンゾ処方量依存に陥ったドクターの減断薬と回復レポート」を追加しました
+                </Link>
+                <Badge variant="danger">新</Badge>
+                {/* <Badge variant="info">更</Badge> */}
+              </div>
+              <div>
                 サイト内検索機能を追加しました
                 <Badge variant="danger">新</Badge>
               </div>
@@ -37,20 +44,6 @@ const IndexPage = () => (
                 <Badge variant="info">更</Badge>
                 {/* <Badge variant="danger">新</Badge> */}
               </div>
-              <div>
-                <Link to="/patients-article/10" alt="benzo tapering log">
-                  Updated the article "my tapering log"
-                </Link>
-                <Badge variant="info">更</Badge>
-              </div>
-              <br />
-              <div>
-                <Link to="/patients-article/11" alt="推奨ブログ集">
-                  患者向け記事「推奨ブログとYoutubeチャンネル」を追加しました
-                </Link>
-                <Badge variant="danger">新</Badge>
-                {/* <Badge variant="info">更</Badge> */}
-              </div>
             
             </Col>
           </Row>
@@ -58,7 +51,7 @@ const IndexPage = () => (
             <Col>
               <h2 className={Style.h2Size}>ニュースリンク</h2>
               <a href="https://medical.jiji.com/topics/1495" alt="睡眠薬の中止で離脱症状" target="_blank" rel="noreferrer noopener">「睡眠薬や抗不安薬の中止で離脱症状」（メディカルトリビューン＝時事）</a>
-              <br /><span className={Style.fontSmallCrimson}>週刊誌等でベンゾの危険性についての記事が多くなっています。それらを読んでけしてすぐに止めたり減薬を急がないでください。充分に学べば不安になることはありません。</span>
+              <br /><span className={Style.fontSmallCrimson}>週刊誌等でベンゾの危険性についての記事が多くなっています。それらを読んで<u>けしてすぐに止めたり減薬を急がないでください</u>。充分に学べば不安になることはありません。</span>
             </Col>
           </Row>
         </Col>
@@ -74,7 +67,7 @@ const IndexPage = () => (
                 <a href="https://youtu.be/X4VwnA3qsas" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener">リサ・リンのこれが人生ーベンゾクライシス （後半）19分</a>
                 <br />
                 <span className={Style.fontSmall}>This Is Life with Lisa Ling 2019年10月6日放映</span>
-                <a href="https://youtu.be/nHDjjwMKRCY" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener"><Image filename="home_03.jpg" alt="ドキュメンタリー番組―ベンゾクライシス" /></a>
+                <a href="https://youtu.be/nHDjjwMKRCY" alt="ベンゾクライシス" target="_blank" rel="noreferrer noopener"><Image filename="home_02.jpg" alt="ドキュメンタリー番組―ベンゾクライシス" /></a>
                 <br />
                 <span className={Style.fontSmall}>出典：<a href="https://edition.cnn.com/shows/this-is-life-with-lisa-ling" target="_blank" rel="noreferrer noopener">CNN, This Is Life with Lisa Ling</a>      
                 <br />
