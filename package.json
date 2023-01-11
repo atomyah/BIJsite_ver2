@@ -33,7 +33,7 @@
     "gatsby-source-filesystem": "^2.3.0",
     "gatsby-source-microcms": "^0.1.0",
     "gatsby-transformer-json": "^2.4.0",
-    "gatsby-transformer-remark": "^2.8.13",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.4.3",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
